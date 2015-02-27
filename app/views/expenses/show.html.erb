@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Concept</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="success">
+        <td><%= @expense.category.name %></td>
+        <td><%= @expense.date %></td>
+        <td><%= @expense.concept %></td>
+        <td><%= @expense.amount %></td>
+      </tr>
+    </tbody>
+  </table>
+
+<%= link_to 'Edit', edit_expense_path(@expense) %> |
+<%= link_to 'Back', expenses_path %>
