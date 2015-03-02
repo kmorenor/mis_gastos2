@@ -23,9 +23,8 @@
         </tbody>
       </table>
         <br>
-        <button type="button" class="btn btn-default">
-      <span class="glyphicon glyphicon-plus"></span> <%= link_to 'New Expense', new_expense_path %>
-    </button>
+      <%=button_to "New Expense", new_expense_path, :id => "Expense", 
+        :class => "btn btn-default", :method => :get %> 
 
 
          
